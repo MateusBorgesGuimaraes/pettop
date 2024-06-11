@@ -1,0 +1,11 @@
+.sidenav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidenav ul li a {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--white);
+}

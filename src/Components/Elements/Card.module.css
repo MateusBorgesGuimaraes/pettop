@@ -1,0 +1,64 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: max-content;
+  height: 320px;
+}
+
+.image {
+  width: 5.8125rem;
+  height: 10rem;
+  align-self: center;
+}
+
+.imageContainer {
+  order: 1; /* Define a ordem do container da imagem */
+  display: flex;
+  justify-content: center;
+}
+
+.secondRowCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  order: 2;
+}
+
+.name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--black);
+  margin-top: 0.75rem;
+}
+
+.price {
+  font-family: var(--font-secundaria);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gray);
+  margin-top: 0.75rem;
+}
+
+.btns {
+  justify-self: flex-end;
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.btnComprar {
+  background: var(--green);
+  padding: 0.625rem 1.5rem;
+  border-radius: 4px;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.btnAdd {
+  background: var(--yellow);
+  padding: 0.625rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}

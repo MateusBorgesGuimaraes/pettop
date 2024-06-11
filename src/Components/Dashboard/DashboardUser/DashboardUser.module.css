@@ -1,0 +1,51 @@
+.usersGeral {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: var(--space);
+}
+
+.formSearch {
+  grid-column: 4/-1;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.h1Geral {
+  grid-column: 1/-1;
+  grid-column: 4/-1;
+  margin-bottom: var(--space);
+}
+
+.user {
+  grid-column: 4/-1;
+}
+
+.user li {
+  display: flex;
+  gap: var(--space);
+  margin-bottom: var(--space);
+  align-items: center;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.user li > button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bg {
+  background: var(--green);
+  border-radius: 0.5rem;
+  width: 25rem;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+}
+
+.bg a {
+  display: flex;
+  color: var(--white);
+  gap: 1.5rem;
+}

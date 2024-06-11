@@ -1,0 +1,57 @@
+.containerProdAdd {
+  margin-top: var(--space);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.formAddProd {
+  grid-column: 2/-1;
+}
+
+.categorias {
+  display: flex;
+  align-items: center;
+  gap: var(--space);
+  margin-bottom: var(--space);
+}
+
+.categorias input {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px; /* Tamanho da bolinha */
+  height: 20px;
+  border-radius: 50%; /* Forma da bolinha */
+  background-color: #ccc; /* Cor padrão da bolinha */
+}
+
+input[type="radio"].red:checked + label::before {
+  background-color: var(--red);
+}
+
+input[type="radio"].blue:checked + label::before {
+  background-color: var(--blue);
+}
+
+input[type="radio"].green:checked + label::before {
+  background-color: var(--green);
+}

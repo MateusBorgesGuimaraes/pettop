@@ -1,0 +1,37 @@
+.containertextArea {
+  margin-bottom: 1rem;
+}
+
+.textArea {
+  border: none;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  background: #dce2e4;
+  transition: 0.2s;
+  font-family: var(--font-primaria);
+}
+
+.textArea:focus,
+.textArea:hover {
+  outline: none;
+  background-color: var(--white);
+  box-shadow: 0 0 0 2px var(--yellow);
+}
+
+.label {
+  display: block;
+  font-size: 1rem;
+  line-height: 1;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.error {
+  color: #f31;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}

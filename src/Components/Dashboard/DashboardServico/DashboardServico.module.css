@@ -1,0 +1,83 @@
+.containerPedidos {
+  margin-top: var(--space);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space);
+}
+
+.pedidoCont {
+  grid-column: 3/-1;
+  display: flex;
+  gap: var(--space);
+}
+
+.pedido {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.125rem 1.5rem;
+}
+
+.pedido a {
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.firsPart {
+  grid-column: 1;
+}
+
+.firsPart > p {
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.pedido > p {
+  color: var(--white);
+}
+
+.pedido a,
+.firsPart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space);
+}
+
+.pedido::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100vw;
+  width: calc(100vw + 100%);
+  height: 100%;
+  background: var(--green);
+  z-index: -1;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.green1::after {
+  background: var(--green);
+}
+
+.red1::after {
+  background: var(--red);
+}
+
+.blue1::after {
+  background: var(--blue);
+}
+
+.yellow1::after {
+  background: var(--yellow);
+}
+
+.dateCreate {
+  color: var(--gray);
+  align-self: center;
+}

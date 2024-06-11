@@ -1,0 +1,142 @@
+.produtosContainer {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  gap: var(--space);
+}
+
+.produtosContainer1 {
+  color: var(--white);
+  grid-column: 1/4;
+  position: relative;
+  display: grid;
+  align-items: center;
+  max-height: 43.125rem;
+}
+
+.produtosContainer1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  width: calc(100vw + 100%);
+  height: 100%;
+  background: var(--blue);
+  z-index: -1;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.produtosContainer1 h3 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.produtoTit {
+  position: relative;
+  padding: 1rem 0rem;
+  padding-left: 8rem;
+  color: var(--white);
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.produtosContainer2 {
+  grid-column: 4/-1;
+}
+
+.produtoTit::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100vw;
+  width: calc(100vw + 100%);
+  height: 100%;
+  background: var(--red);
+  z-index: -1;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.produtosContainer3 {
+  margin-top: 1.25rem;
+  grid-column: 4/-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+  justify-items: center;
+}
+
+.formClass {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.formClass.col1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.formCol1 div,
+.formCol2 div {
+  display: flex;
+  margin-bottom: 0.875rem;
+  flex-wrap: wrap;
+}
+
+.especie,
+.preco,
+.tipo {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.especie::after,
+.preco::after {
+  content: "";
+  width: 15.375rem;
+  height: 0.125rem;
+  background-color: var(--white);
+  display: block;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.titMin {
+  margin-bottom: 0.875rem;
+}
+
+.formCol1 div input,
+.formCol2 div input {
+  width: 1rem;
+  height: 1rem;
+  border: none;
+}
+
+.formCol1 div label,
+.formCol2 div label {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.formColPreco {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.formColPreco div {
+  display: flex;
+}
+
+.preco,
+.tipo {
+  margin-top: 0px;
+}
+
+.preco h3,
+.tipo h3 {
+  margin-bottom: 1rem;
+}

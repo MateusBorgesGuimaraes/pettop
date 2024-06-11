@@ -1,0 +1,165 @@
+.blogContainer {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+}
+
+.blogCol1 {
+  position: relative;
+  grid-column: 1/5;
+  display: flex;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.blogCol1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  width: calc(100vw + 100%);
+  height: 100%;
+  background: var(--yellow);
+  z-index: -1;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.blogCol2 {
+  position: relative;
+  grid-column: 6/-1;
+}
+
+.titCol1 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 4rem;
+  letter-spacing: -0.2em;
+  position: relative;
+  padding: 9.625rem 0px;
+}
+
+.titCol1::before {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 160px;
+  background-color: var(--white);
+  z-index: -1;
+  right: 30px;
+}
+
+.containerLegenda {
+  display: flex;
+  gap: 3rem;
+  margin-left: 1.5rem;
+}
+
+.containerLegenda p {
+  font-weight: 600;
+  font-size: 1.125rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.containerLegenda .red::before {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--red);
+  z-index: -1;
+  left: -24px;
+}
+
+.containerLegenda .blue::before {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--blue);
+  z-index: -1;
+  left: -24px;
+}
+
+.containerLegenda .green::before {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--green);
+  z-index: -1;
+  left: -24px;
+}
+
+.containerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.containerLink {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerLink::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100vw;
+  width: calc(100vw + 100%);
+  height: 100%;
+  background: var(--green);
+  z-index: -1;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.blue1::after {
+  background: var(--blue);
+}
+
+.green1::after {
+  background: var(--green);
+}
+
+.red1::after {
+  background: var(--red);
+}
+
+.containerLinkfirtCol {
+  padding: 1.25rem 0rem 1.25rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.containerLinkfirtCol a {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--black);
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerLinkfirtCol p {
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: var(--white);
+}
+
+.containerLinkfirtCol span {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--gray);
+}

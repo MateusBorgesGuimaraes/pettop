@@ -1,0 +1,123 @@
+.containerProdInfos {
+  margin-top: var(--space);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.categorias {
+  grid-column: 2/4;
+}
+
+.categorias p {
+  position: relative;
+  margin-top: var(--space);
+  font-weight: 600;
+  margin-left: 1.75rem;
+}
+
+.categorias p::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  background-color: var(--red);
+  left: -1.75rem;
+}
+
+.categorias .green::before {
+  background-color: var(--green);
+}
+
+.categorias .yellow::before {
+  background-color: var(--yellow);
+}
+
+.produtosGeral {
+  grid-column: 4/-1;
+  /* background: pink; */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.formSearch {
+  grid-column: 2/-1;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.inputForm {
+  grid-column: 1/-1;
+}
+
+.buttonForm {
+  border: none;
+  background: var(--blue);
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.produto {
+  grid-column: 2/-1;
+  /* background: lightgoldenrodyellow; */
+}
+
+.produto li {
+  display: flex;
+  gap: var(--space);
+  margin-bottom: var(--space);
+  align-items: center;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.produto li > button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bg {
+  background: var(--green);
+  border-radius: 0.5rem;
+  width: 25rem;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.yellow1 {
+  background: var(--yellow);
+}
+
+.red1 {
+  background: var(--red);
+}
+
+.green1 {
+  background: var(--green);
+}
+
+.buttonAdd {
+  padding: 0.875rem 0rem;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  grid-column: 3/8;
+  /* cursor: pointer; */
+}

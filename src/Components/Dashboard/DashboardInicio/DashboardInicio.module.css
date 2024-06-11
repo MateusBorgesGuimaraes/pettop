@@ -1,0 +1,6 @@
+.dashboardInit h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gray);
+  margin-top: 1.5rem;
+}

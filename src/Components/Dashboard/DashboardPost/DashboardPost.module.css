@@ -1,0 +1,88 @@
+.postContainer {
+  margin-top: var(--space);
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: var(--space);
+  justify-content: center;
+  align-items: center;
+}
+
+.postContent {
+  display: flex;
+  gap: 1.5rem;
+  background: var(--green);
+  border-radius: 0.5rem;
+  grid-column: 1/10;
+  padding: 1.25rem 2rem 1.25rem 2rem;
+  justify-content: space-between;
+}
+
+.postCol1 {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.postCol1 a {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--black);
+}
+.postCol1 p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.postContent a {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.postContent > p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.postContainer > a {
+  justify-self: end;
+}
+
+.btnAdd {
+  background: var(--yellow);
+  padding: 0.875rem 2rem;
+  color: var(--black);
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.btnAddContainer {
+  display: flex;
+  margin-top: var(--space);
+  /* justify-content: end; */
+}
+
+.blue1 {
+  background: var(--blue);
+}
+
+.green1 {
+  background: var(--green);
+}
+
+.red1 {
+  background: var(--red);
+}
+
+.buttonRemove {
+  background: none;
+  border: none;
+  min-width: 2rem;
+  min-height: 2.25rem;
+  cursor: pointer;
+}

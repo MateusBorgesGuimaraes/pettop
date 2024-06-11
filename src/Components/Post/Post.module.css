@@ -1,0 +1,78 @@
+.postContainer {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+}
+
+.postCol1 {
+  position: relative;
+  grid-column: 1/5;
+  display: flex;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.postCol1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  width: calc(100vw + 100%);
+  height: 100%;
+  background: var(--blue);
+  z-index: -1;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.postCol2 {
+  position: relative;
+  grid-column: 6/-1;
+}
+
+.titCol1 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 4rem;
+  color: var(--white);
+  letter-spacing: -0.2em;
+  position: relative;
+  padding: 9.625rem 0px;
+}
+
+.titCol1::before {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 160px;
+  background-color: var(--green);
+  z-index: -1;
+  right: 30px;
+}
+
+.postCol2 h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.postCol2 h4 {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--gray);
+}
+
+.postCol2 p {
+  margin-top: 0.75rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--black);
+  line-height: 1.5;
+  text-indent: 1.5rem;
+}
+
+.date {
+  margin-top: 1.5rem;
+}

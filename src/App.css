@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,700;1,700&family=Montserrat:ital,wght@0,500;0,600;0,700;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --light-gray: #dbe1e4;
+  --gray: #2c3235;
+  --black: #011015;
+  --blue: #187498;
+  --darker-blue: #045270;
+  --medium-blue: #055271;
+  --green: #36ae7c;
+  --red: #eb5353;
+  --yellow: #f9d923;
+  --font-primaria: "Montserrat", sans-serif;
+  --font-secundaria: "Courier Prime", monospace;
+  --space: 1.25rem;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--font-primaria);
+  color: var(--black);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  display: block;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 86.25rem;
+  margin: 0 auto;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh + 15rem);
+}
+
+.AppBody {
+  flex: 1;
+}

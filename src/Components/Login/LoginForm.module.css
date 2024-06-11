@@ -1,0 +1,82 @@
+.loginForm {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+}
+
+.loginFormContainer1 {
+  position: relative;
+  grid-column: 2/-1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1.875rem;
+  padding-left: 8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.loginFormContainer1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100vw;
+  width: calc(100vw + 100%);
+  height: 100%;
+  background: var(--green);
+  z-index: -1;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.loginFormContainer2 {
+  margin-top: 1.25rem;
+  position: relative;
+  grid-column: 1/6;
+  display: flex;
+  justify-content: center;
+}
+
+.loginFormContainer3 {
+  grid-column: 7/-1;
+  margin-top: 6.8rem;
+}
+
+.loginFormContainer2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  width: calc(100vw + 100%);
+  height: 100%;
+  background: var(--yellow);
+  z-index: -1;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.titLogin {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 4rem;
+  padding: 4.5rem 0px;
+  letter-spacing: -0.2em;
+  position: relative;
+}
+
+.titLogin::before {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 60px;
+  background-color: var(--white);
+  z-index: -1;
+  right: 30px;
+}
+
+.linkCriar {
+  margin-top: 1.25rem;
+  color: var(--gray);
+  text-decoration: underline;
+}
